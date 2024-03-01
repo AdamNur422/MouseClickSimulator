@@ -1,26 +1,26 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <SimulatorProject xmlns="https://github.com/TTExtensions/MouseClickSimulator">
-  <Title>Automatic Fishing in Elm Street</Title>
+  <Title>Automatic Fishing in Donalds Dreamland</Title>
   <Description>
-The Toon will automatically fish in Elm Street, Daisy Gardens.
+The Toon will automatically fish in Donald's Dreamland.
 Before you click on Start, make sure that
 • you are in a quiet district,
 • your fish bucket is empty,
 • you have enough JellyBeans for 20 casts,
-• your toon is standing on the front right fishing board (viewed from entrance).
-Note: Toons may cause the simulator to fail.
+• your toon is standing on the back right fishing board (viewed from entrance).
   </Description>
 
   <MainAction>
       
     <Compound type="Sequential">
         
+        
       <!-- Use the automatic fishing action 19 times,
            plus the straight fishing action.
       -->
       <Loop count="19">
-        <AutomaticFishing scan1="200, 80" scan2="1430, 792" bubbleColorRgb="17, 102, 75"
-                          toleranceRgb="5, 4, 5" />
+        <AutomaticFishing scan1="248, 239" scan2="1492, 660" bubbleColorRgb="55, 103, 116"
+                          toleranceRgb="8, 14, 11" />
       </Loop>
       <!--
       The last cast must always be straight; otherwise the toon will rotate in
@@ -29,23 +29,23 @@ Note: Toons may cause the simulator to fail.
       -->
       <StraightFishing />
           
-      <QuitFishing />
-
-      <Pause duration="1200" />
+        <QuitFishing />
         
+      <Pause duration="1200" />
+      <PressKey key="Right" duration="350" />
+
       <!-- Now go to the fisherman and sell the fish. -->
       <Compound type="Sequential" minimumPause="50" maximumPause="300" loop="false">
-        <PressKey key="Right" duration="260" />
-        <PressKey key="Up" duration="3000" />
+        <PressKey key="Up" duration="3300" />
         <Pause duration="1000" />
-
+          
         <SellFish />
 
         <Pause duration="1000" />
-        <PressKey key="Down" duration="5000" />
+        <PressKey key="Down" duration="5900" />
         <Pause duration="2000" />
       </Compound>
-        
+
     </Compound>
       
   </MainAction>
