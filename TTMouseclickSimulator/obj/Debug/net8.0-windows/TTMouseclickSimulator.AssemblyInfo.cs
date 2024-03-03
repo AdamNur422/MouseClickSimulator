@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TTMouseclickSimulator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bef2c16041b2c4968bd4fc56eb16f96fff75db2f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28b2fb1bc4afce0a462b34dfb84fe1dc9b45b937")]
 [assembly: System.Reflection.AssemblyProductAttribute("TTMouseclickSimulator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TTMouseclickSimulator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
